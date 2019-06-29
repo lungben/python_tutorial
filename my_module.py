@@ -1,3 +1,5 @@
+# example file for module imports
+
 __version__ = '0.0.1'
 
 my_secret = 'you_will_never_guess'
