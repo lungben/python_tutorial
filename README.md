@@ -28,7 +28,14 @@ It is assumed that all packages included in the Anaconda distribution are instal
 
     conda install [-c conda-forge] package
     
+## Recommended Software
+
+* Git for Windows (in Linux usually already available): https://gitforwindows.org/
+* Miniconda or Anaconda: https://docs.conda.io/en/latest/miniconda.html
+* PyCharm CE: https://www.jetbrains.com/pycharm/download/
+* Docker: https://docs.docker.com/docker-for-windows/install/
+    
 ## Table of Content
- tbd
- 
- 
+
+[Index](index.md)
+
