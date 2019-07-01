@@ -22,7 +22,7 @@
 
 Matplotlib and Seaborn
 
-[Example using Numba JIT Compiler](examples.ipynb)
+[Numba JIT Compiler](numba_jit.ipynb)
 
 ## Web Framework
 
@@ -35,3 +35,14 @@ Dash and Dash Table
 ## Databases
 
 [Databases](databases.ipynb)
+
+## Additional Libraries
+
+Quantlib
+
+Luigi
+
+Dask
+
+PyTest
+
