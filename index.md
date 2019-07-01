@@ -12,6 +12,8 @@
 
 [Modules and Imports](modules_and_imports.ipynb)
 
+[Multithreading and Multiprocessing](parallel_computing.ipynb)
+
 [Logging and Exception Handling](logging_and_exception_handling.ipynb)
 
 ## Sci-Py Stack
