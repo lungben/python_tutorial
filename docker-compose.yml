@@ -16,7 +16,7 @@ services:
         volumes:
             - /volume1/database_storage/postgres_db:/var/lib/postgresql/data # define directory to store db data here
         environment:
-            - POSTGRES_PASSWORD=python_turorial_5432 # should be changed to something secret
+            - POSTGRES_PASSWORD=python_tutorial_5432 # should be changed to something secret
         networks:
             - jupyter_net
     mongo_db:
