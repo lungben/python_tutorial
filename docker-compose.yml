@@ -1,0 +1,33 @@
+version: "3"
+services:
+    jupyter:
+        image: jupyter/scipy-notebook:latest
+        ports:
+            - "8888:8888" # port on which Jupyter Notebook / Lab is accessible
+        volumes:
+            - /volume1/docker/notebooks:/home/jovyan # define your own working directory here
+        networks:
+            - jupyter_net
+
+    postgres_db:
+        image: postgres:alpine
+        ports:
+            - "15432:5432"
+        volumes:
+            - /volume1/database_storage/postgres_db:/var/lib/postgresql/data # define directory to store db data here
+        environment:
+            - POSTGRES_PASSWORD=python_turorial_5432 # should be changed to something secret
+        networks:
+            - jupyter_net
+    mongo_db:
+        image: mongo:latest
+        ports:
+            - "27017:27017"
+        volumes:
+            - /volume1/database_storage/mongo_db:/data/db # define directory to store db data here
+        networks:
+            - jupyter_net
+
+networks:
+    jupyter_net:
+        driver: bridge

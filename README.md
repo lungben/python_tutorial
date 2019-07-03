@@ -18,6 +18,30 @@ This tutorial is not intended for:
 This tutorial is not structured linearly (from chapter 1-x), but the notebooks covering specific topics are rather independent from each other.
 I tried to illustrate the various points without requiring too much knowledge of other topics, but implicit dependencies could not be avoided.
 
+## Docker-based Installation
+
+1. Install Docker (including docker-compose)
+
+    a. Windows 10 Professional: https://docs.docker.com/docker-for-windows/install/
+
+    b. other Windows versions: https://docs.docker.com/toolbox/toolbox_install_windows/
+
+    c. Linux (link is for Ubuntu): https://docs.docker.com/install/linux/docker-ce/ubuntu/
+
+2. Install Git for Windows (in Linux usually already available): https://gitforwindows.org/
+
+3. Clone this repository with Git into an empty directory
+
+        git clone https://github.com/lungben/python_tutorial .
+
+
+4. Start the Jupyter and Database server:
+
+        docker-compose up -d
+
+
+5. Start Jupyter Lab: http://localhost:8888/lab
+
 ## Technology
 
 This tutorial is written for Python 3.
@@ -35,7 +59,53 @@ It is assumed that all packages included in the Anaconda distribution are instal
 * PyCharm CE: https://www.jetbrains.com/pycharm/download/
 * Docker: https://docs.docker.com/docker-for-windows/install/
     
-## Table of Content
+# Table of Content
 
-[Index](index.md)
+## Python Basics
+
+[Variables and Data Types](notebooks/variables_and_data_types.ipynb)
+
+[Loops, Iterators and Flow Control](notebooks/loops_iterators_and_flow_control.ipynb)
+
+[Functions](notebooks/functions.ipynb)
+
+[Classes](notebooks/classes.ipynb)
+
+[Modules and Imports](notebooks/modules_and_imports.ipynb)
+
+[Multithreading and Multiprocessing](notebooks/parallel_computing.ipynb)
+
+[Logging and Exception Handling](notebooks/logging_and_exception_handling.ipynb)
+
+## Sci-Py Stack
+
+[Numpy](notebooks/numpy.ipynb)
+
+[Pandas](notebooks/pandas.ipynb)
+
+Matplotlib and Seaborn
+
+[Numba JIT Compiler](notebooks/numba_jit.ipynb)
+
+## Web Framework
+
+Plotly
+
+Flask
+
+Dash and Dash Table
+
+## Databases
+
+[Databases](notebooks/databases.ipynb)
+
+## Additional Libraries
+
+Quantlib
+
+Luigi
+
+Dask
+
+PyTest
 
