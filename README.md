@@ -50,7 +50,7 @@ The notebooks can be opened using Jupyter Notebook or Jupyter Lab.
 
 It is assumed that all packages included in the Anaconda distribution are installed. If Miniconda is used, it may be required to install additional packages using
 
-    conda install [-c conda-forge] package
+    conda install [-c conda-forge] package --yes
     
 ## Recommended Software
 
@@ -61,7 +61,7 @@ It is assumed that all packages included in the Anaconda distribution are instal
     
 # Table of Content
 
-## Python Basics
+## Python General
 
 [Variables and Data Types](notebooks/variables_and_data_types.ipynb)
 
@@ -77,13 +77,15 @@ It is assumed that all packages included in the Anaconda distribution are instal
 
 [Logging and Exception Handling](notebooks/logging_and_exception_handling.ipynb)
 
+[Unit Tests](notebooks/testing.ipynb)
+
 ## Sci-Py Stack
 
 [Numpy](notebooks/numpy.ipynb)
 
 [Pandas](notebooks/pandas.ipynb)
 
-Matplotlib and Seaborn
+[Plotting with Matplotlib and Seaborn](notebooks/plotting.ipynb)
 
 [Numba JIT Compiler](notebooks/numba_jit.ipynb)
 
@@ -97,7 +99,9 @@ Dash and Dash Table
 
 ## Databases
 
-[Databases](notebooks/databases.ipynb)
+[Relational Databases](notebooks/relational_databases.ipynb)
+
+[No-SQL Databases](notebooks/no_sql_databases.ipynb)
 
 ## Additional Libraries
 
@@ -107,5 +111,5 @@ Luigi
 
 Dask
 
-PyTest
+SymPy
 
