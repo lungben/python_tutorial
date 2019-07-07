@@ -34,7 +34,8 @@ I tried to illustrate the various points without requiring too much knowledge of
 
         git clone https://github.com/lungben/python_tutorial .
 
-4. Adjust the local paths (1st part before colon) in the *volume* statements to local directories (to be created beforehand).
+
+4. In [docker-compose.yml](docker-compose.yml), adjust the local paths (1st part before colon) in the *volume* statements to local directories (to be created beforehand).
 
 5. Start the Jupyter and Database server:
 
