@@ -34,13 +34,14 @@ I tried to illustrate the various points without requiring too much knowledge of
 
         git clone https://github.com/lungben/python_tutorial .
 
+4. Adjust the local paths (1st part before colon) in the *volume* statements to local directories (to be created beforehand).
 
-4. Start the Jupyter and Database server:
+5. Start the Jupyter and Database server:
 
         docker-compose up -d
 
 
-5. Start Jupyter Lab: http://localhost:8888/lab
+6. Start Jupyter Lab: http://localhost:8888/lab
 
 ## Technology
 
@@ -79,15 +80,15 @@ It is assumed that all packages included in the Anaconda distribution are instal
 
 [Unit Tests](notebooks/testing.ipynb)
 
-## Sci-Py Stack
+## Numeric Calculations and Data Analysis
 
 [Numpy](notebooks/numpy.ipynb)
 
 [Pandas](notebooks/pandas.ipynb)
 
-[Plotting with Matplotlib and Seaborn](notebooks/plotting.ipynb)
-
 [Numba JIT Compiler](notebooks/numba_jit.ipynb)
+
+[Plotting with Matplotlib and Seaborn](notebooks/plotting.ipynb)
 
 ## Web Framework
 
