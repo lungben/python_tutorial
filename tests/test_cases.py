@@ -1,5 +1,6 @@
 import pytest
 import my_module
+import utils
 
 def test_double_1():
     """simple test case"""
@@ -27,6 +28,8 @@ def test_double_3(vals_for_test):
     """using pytest.fixture for defining test values and expected outputs"""
     vals, expectations = vals_for_test
     assert (expectations == my_module.double_me(vals)).all()
+    # same as above, but using defined utility function
+    assert utils.compare_np_arrays(expectations, my_module.double_me(vals))
     
 def test_multiplier(multiplier7):
     """using pytest.fixture for construction of test objects"""
