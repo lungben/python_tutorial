@@ -10,5 +10,5 @@ for new_path in new_paths:
     if new_path not in sys.path:
         sys.path.append(new_path)
 
-# import fixtures and utils
+# import fixtures
 from fixtures import * # one of the very few cases where import * is OK
