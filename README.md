@@ -111,6 +111,8 @@ Dash and Dash Table
 
 [Object-Relational Mapping with SQLAlchemy](notebooks/sqlalchemy_orm.ipynb)
 
-[No-SQL Databases](notebooks/no_sql_databases.ipynb)
+[MongoDB](notebooks/mongo_db.ipynb)
+
+Redis
 
 Batch Job Pipelining with Luigi
