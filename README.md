@@ -46,7 +46,7 @@ I tried to illustrate the various points without requiring too much knowledge of
 
 ## Technology
 
-This tutorial is written for Python 3.
+This tutorial is written for Python 3.7+. No effort has been made or will be made for compatibility to legacy Python versions (e.g. Python 2.7).
 
 The notebooks can be opened using Jupyter Notebook or Jupyter Lab.
 
@@ -91,6 +91,12 @@ It is assumed that all packages included in the Anaconda distribution are instal
 
 [Plotting with Matplotlib and Seaborn](notebooks/plotting.ipynb)
 
+[Symbolic Computation using SymPy](notebooks/symbolic_computation.ipynb)
+
+Parallelization with Dask
+
+Mathematical Finance with Quantlib
+
 ## Web Framework
 
 Plotly
@@ -103,15 +109,8 @@ Dash and Dash Table
 
 [Relational Databases](notebooks/relational_databases.ipynb)
 
+[Object-Relational Mapping with SQLAlchemy](notebooks/sqlalchemy_orm.ipynb)
+
 [No-SQL Databases](notebooks/no_sql_databases.ipynb)
 
-## Additional Libraries
-
-Quantlib
-
-Luigi
-
-Dask
-
-SymPy
-
+Batch Job Pipelining with Luigi
