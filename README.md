@@ -44,6 +44,34 @@ I tried to illustrate the various points without requiring too much knowledge of
 
 6. Start Jupyter Lab: http://localhost:8888/lab
 
+## Local Installation
+
+### Anaconda
+
+The Anaconda package contains a large number of libraries and can be used out-of-the-box for most parts of this tutorial (except external databases).
+
+The drawback is that it includes also a number of libraries which are not required, therefore it may be a bit too heavy for many purposes.
+
+https://www.anaconda.com/distribution/#download-section
+
+Download Python 3.x version.
+
+### Miniconda
+
+Miniconda contains only the Conda package manager and its dependencies. It allows to create custom virtual environments with exactly the required packages. 
+
+https://docs.conda.io/en/latest/miniconda.html
+
+Create virtual environment for tutorial:
+
+    conda update conda
+    conda create -n tutorial python=3.7 ipython notebook juypterlab numpy pandas matplotlib seaborn scipy numba pytest sympy sqlalchemy
+    activate tutorial
+
+More packages may be installed later using 
+
+    conda install -n tutorial package_name
+
 ## Technology
 
 This tutorial is written for Python 3.7+. No effort has been made or will be made for compatibility to legacy Python versions (e.g. Python 2.7).
