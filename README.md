@@ -44,6 +44,25 @@ I tried to illustrate the various points without requiring too much knowledge of
 
 6. Start Jupyter Lab: http://localhost:8888/lab
 
+### Update Containers
+
+    docker-compose down # stops and removes all containers
+    docker-compose pull # downloads newest image versions
+    docker-compose up -d # starts container
+    
+### Update Conda Packages
+
+The official Jupyter Docker image usually does not contain the latest versions of the Conda packages.
+To update all packages, use the following commands:
+
+    docker exec -it tutorial_jupyter_1 bash # starts bash shell in Docker container
+    conda update -n base --yes conda
+    conda updaate --all --yes
+    exit # exists container shell
+    
+__Warning:__ While updating all packages usually works fine for a local Conda installation, it seems to break the Jupyter Docker container rather often.
+Fortunately it is easy to restore Docker containers to their original state, just follow the instructions for Update Containers above.
+
 ## Local Installation
 
 ### Anaconda
@@ -119,6 +138,8 @@ It is assumed that all packages included in the Anaconda distribution are instal
 
 [Plotting with Matplotlib and Seaborn](notebooks/plotting.ipynb)
 
+[Interactive Visualizations with Plotly](notebooks/plotly.ipynb)
+
 [Symbolic Computation using SymPy](notebooks/symbolic_computation.ipynb)
 
 Parallelization with Dask
@@ -126,8 +147,6 @@ Parallelization with Dask
 Mathematical Finance with Quantlib
 
 ## Web Framework
-
-Plotly
 
 Flask
 

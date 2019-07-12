@@ -1,6 +1,7 @@
 # project specific
 
 test_data.csv
+**temp**
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
