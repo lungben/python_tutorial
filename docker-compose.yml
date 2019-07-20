@@ -27,6 +27,15 @@ services:
             - /volume1/database_storage/mongo_db:/data/db # define directory to store db data here
         networks:
             - jupyter_net
+    flask_devserver:
+        bulid: flask_devserver/docker
+        image: flask_devserver:latest
+        ports:
+            - "25000:5000"
+        volumes:
+            - "/volume1/docker/notebooks/Tutorial/flask_devserver/app:/app"
+        networks:
+            - jupyter_net
 
 networks:
     jupyter_net:

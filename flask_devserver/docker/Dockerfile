@@ -7,7 +7,6 @@ RUN conda update conda --yes && \
 COPY start_server.py .
 
 EXPOSE 5000
-VOLUME app
+VOLUME /app
 
-ENTRYPOINT ["python"]
-CMD ["start_server.py"]
+CMD ["python", "start_server.py"]
