@@ -28,12 +28,12 @@ services:
         networks:
             - jupyter_net
     flask_devserver:
-        bulid: flask_devserver/docker
+        bulid: flask/flask_devserver
         image: flask_devserver:latest
         ports:
             - "25000:5000"
         volumes:
-            - "/volume1/docker/notebooks/Tutorial/flask_devserver/app:/app"
+            - "/volume1/docker/notebooks/Tutorial/flask/app:/app"
         networks:
             - jupyter_net
 
