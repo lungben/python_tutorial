@@ -2,6 +2,7 @@
 
 test_data.csv
 **temp**
+dask-worker-space
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

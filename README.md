@@ -142,7 +142,7 @@ It is assumed that all packages included in the Anaconda distribution are instal
 
 [Symbolic Computation using SymPy](notebooks/symbolic_computation.ipynb)
 
-Parallelization with Dask
+[Parallelization with Dask](notebooks/dask.ipynb)
 
 Mathematical Finance with Quantlib
 

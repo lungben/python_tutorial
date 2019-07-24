@@ -4,6 +4,7 @@ services:
         image: jupyter/scipy-notebook:latest
         ports:
             - "8888:8888" # port on which Jupyter Notebook / Lab is accessible
+            - "8787:8787" # Dask Dashboard
         volumes:
             - /volume1/docker/notebooks:/home/jovyan # define your own working directory here
         networks:
