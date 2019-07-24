@@ -3,6 +3,7 @@
 test_data.csv
 **temp**
 dask-worker-space
+example_files/*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
