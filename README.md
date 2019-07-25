@@ -48,6 +48,7 @@ I tried to illustrate the various points without requiring too much knowledge of
 
     docker-compose down # stops and removes all containers
     docker-compose pull # downloads newest image versions
+    docker-compose build # (re-) builds custom images
     docker-compose up -d # starts container
     
 ### Update Conda Packages
@@ -57,7 +58,7 @@ To update all packages, use the following commands:
 
     docker exec -it tutorial_jupyter_1 bash # starts bash shell in Docker container
     conda update -n base --yes conda
-    conda updaate --all --yes
+    conda update --all --yes
     exit # exists container shell
     
 __Warning:__ While updating all packages usually works fine for a local Conda installation, it seems to break the Jupyter Docker container rather often.

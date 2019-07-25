@@ -30,7 +30,6 @@ services:
             - jupyter_net
     flask_devserver:
         bulid: flask/flask_devserver
-        image: flask_devserver:latest
         ports:
             - "25000:5000"
         volumes:
