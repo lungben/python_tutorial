@@ -102,6 +102,30 @@ It is assumed that all packages included in the Anaconda distribution are instal
 
     conda install [-c conda-forge] package --yes
     
+## Useful JupyterLab Settings:
+
+Keyboard shortcuts:
+
+    {
+        // Move cell up
+        "notebook:move-cell-up": {
+          "selector": ".jp-Notebook:focus",
+          "command": "notebook:move-cell-up",
+          "keys": [
+            "Ctrl ArrowUp"
+          ]
+        },
+
+        // Move cell down
+        "notebook:move-cell-down": {
+          "selector": ".jp-Notebook:focus",
+          "command": "notebook:move-cell-down",
+          "keys": [
+            "Ctrl ArrowDown"
+          ]
+        }
+    }
+    
 ## Recommended Software
 
 * Git for Windows (in Linux usually already available): https://gitforwindows.org/
